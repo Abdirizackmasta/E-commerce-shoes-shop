@@ -1,0 +1,79 @@
+.sidebar-title {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+
+.sidebar-items {
+    margin-top: 10px;
+}
+
+.sidebar-label-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidebar-label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.all {
+    background: linear-gradient(blue, crimson);
+}
+
+.sidebar-label-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.sidebar-label-container input:checked~.checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sidebar-label-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+}
+
+.line {
+    margin-top: 3rem;
+    border-color: #f7f7f7;
+}
+
+@media (max-width: 767px) {}

@@ -1,0 +1,33 @@
+.sidebar {
+    width: 17%;
+    position: fixed;
+    height: 100%;
+    font-size: 13px;
+    border-right: 2px solid #e5e5e5;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    margin-bottom: 4rem;
+}
+
+.logo-container h1 {
+    margin-top: 1rem;
+    font-weight: normal;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 30%;
+        padding: 5px;
+    }
+
+    .logo-container h1 {
+        margin-top: .8rem;
+        font-size: 14px;
+    }
+
+}
